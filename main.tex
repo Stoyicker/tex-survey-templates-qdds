@@ -1,0 +1,53 @@
+\documentclass[12pt,fleqn]{scrreprt}
+
+\usepackage[ngerman]{babel}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+\usepackage{paperandpencil}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{Pen and Paper Survey QDDS Template}
+\subtitle{\url{http://www.qdds.org}}
+\author{Jorge Antonio Diaz-Benito Soriano}
+\date{January 2015}
+
+\begin{document}
+
+\maketitle
+
+% Table of contents
+\newpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+\textbf{Table of contents}
+\begin{enumerate}
+\item \hyperref[Filter]{Filter}.
+\item \hyperref[Filter with coloured background]{Filter with coloured background}.
+\item \hyperref[Horizontal response categories]{Horizontal response categories}.
+\item \hyperref[Hybrid questions]{Hybrid questions}.
+\item \hyperref[Open questions]{Open questions}.
+\item \hyperref[Ranking]{Ranking}.
+\item \hyperref[Semantic differences]{Semantic differences}.
+\item \hyperref[Highlighted categories]{Highlighted categories}.
+\item \hyperref[Vertical answer categories]{Vertical answer categories}.
+\end{enumerate}
+
+% Main area
+\newpage
+\pagenumbering{arabic}	
+\setcounter{page}{1}
+
+% Content
+\input{include/content/filter}
+\input{include/content/filter_with_coloured_background}
+\input{include/content/horizontal_response_categories}
+\input{include/content/hybrid_questions}
+\input{include/content/open_questions}
+\input{include/content/ranking}
+\input{include/content/semantic_differences}
+\input{include/content/highlighted_categories}
+\input{include/content/vertical_answer_categories}
+
+\end{document}
